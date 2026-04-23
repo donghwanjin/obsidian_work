@@ -1,0 +1,12 @@
+# Obsidian workspace state (machine-specific)
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node (if any tooling)
+node_modules/

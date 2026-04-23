@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"7cf4dbd53536bdce","type":"group","x":-420,"y":-600,"width":890,"height":260,"label":"pick_lib_core.c"},
+		{"id":"5487e245bd409fb8","type":"group","x":-620,"y":-280,"width":543,"height":340,"label":"stock_lib.c"},
+		{"id":"1d2c8ed3f7a1eb82","type":"group","x":-620,"y":100,"width":500,"height":160,"label":"app_background.c"},
+		{"id":"7c77b445cc3abcd5","type":"group","x":-30,"y":-190,"width":350,"height":160,"label":"prod_perishable_lib.c"},
+		{"id":"c0fefe36fe0e8784","type":"group","x":390,"y":-190,"width":350,"height":160,"label":"pick_lib.c"},
+		{"id":"b64ec6f30c6cf84f","type":"text","text":"PICK_SetWaitAllocation","x":-77,"y":-578,"width":231,"height":60,"color":"5"},
+		{"id":"5b34c96fc97f0fe2","type":"text","text":"PICK_SetReleased","x":154,"y":-429,"width":231,"height":60,"color":"5"},
+		{"id":"5b24e28dc058d1d7","type":"text","text":"PICK_Reset","x":-192,"y":-429,"width":231,"height":60,"color":"5"},
+		{"id":"3a8f40465b81f8ee","x":-420,"y":-240,"width":250,"height":60,"type":"text","text":"STOCK_SetStockStateWithReference"},
+		{"id":"cb7ebfd97c87cb34","type":"text","text":"STOCK_SetStockState","x":-420,"y":-140,"width":250,"height":60},
+		{"id":"37fa8648faffd543","type":"text","text":"STOCK_CheckMissingStock","x":-420,"y":-40,"width":250,"height":60},
+		{"id":"5e7b000d544cee57","type":"text","text":"main","x":-420,"y":160,"width":250,"height":60},
+		{"id":"9f5b88ec662b4de5","x":9,"y":-150,"width":250,"height":60,"type":"text","text":"PROD_PERISHABLE_ResetExpiredPicks"},
+		{"id":"a91c3045f83cf12d","type":"text","text":"PICK_Repick","x":440,"y":-150,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"3ed24157501795f8","fromNode":"b64ec6f30c6cf84f","fromSide":"bottom","toNode":"5b24e28dc058d1d7","toSide":"top"},
+		{"id":"718b1f90ea6edae9","fromNode":"b64ec6f30c6cf84f","fromSide":"bottom","toNode":"5b34c96fc97f0fe2","toSide":"top"},
+		{"id":"92be7e3d70af6b3a","fromNode":"5b24e28dc058d1d7","fromSide":"bottom","toNode":"3a8f40465b81f8ee","toSide":"top"},
+		{"id":"74975150872ac6af","fromNode":"3a8f40465b81f8ee","fromSide":"bottom","toNode":"cb7ebfd97c87cb34","toSide":"top"},
+		{"id":"32972d62d2cfaf9b","fromNode":"cb7ebfd97c87cb34","fromSide":"bottom","toNode":"37fa8648faffd543","toSide":"top"},
+		{"id":"cfae7c56a15d2176","fromNode":"37fa8648faffd543","fromSide":"bottom","toNode":"5e7b000d544cee57","toSide":"top"},
+		{"id":"4da8a5724864a055","fromNode":"5b24e28dc058d1d7","fromSide":"bottom","toNode":"9f5b88ec662b4de5","toSide":"top"},
+		{"id":"b817233da2f1cfae","fromNode":"9f5b88ec662b4de5","fromSide":"bottom","toNode":"5e7b000d544cee57","toSide":"top"},
+		{"id":"7b990e8731772da3","fromNode":"5b24e28dc058d1d7","fromSide":"bottom","toNode":"a91c3045f83cf12d","toSide":"top"}
+	]
+}

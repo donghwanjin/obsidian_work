@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"97b95c21ac7ad2f5","type":"file","file":"temp/Images/Pasted image 20240523102416.png","x":-1120,"y":1620,"width":1261,"height":220},
+		{"id":"ad53c2eee4898cae","type":"text","text":" b OP_RSVN_PickCanUseBucket\n c\n p PickRecNo : 2\n p BucketRecNo : 5","x":-849,"y":1420,"width":360,"height":140},
+		{"id":"af25677c85b45a6d","type":"file","file":"temp/Images/Pasted image 20240523101724.png","x":-1160,"y":-720,"width":1401,"height":184},
+		{"id":"e9a16c344ea0279d","type":"text","text":"Additionally, we found out the du container ID was changed from 2023100311000110 to 2023101011000005, as shown in the below table.","x":-1000,"y":-480,"width":786,"height":60},
+		{"id":"01af0bcfab02132e","type":"file","file":"temp/Images/Pasted image 20240523101755.png","x":-900,"y":-360,"width":840,"height":823},
+		{"id":"8a7de04f1c7bc8f6","type":"text","text":"Test","x":-660,"y":580,"width":160,"height":80},
+		{"id":"cac4637857c69eb0","type":"file","file":"temp/Images/Pasted image 20240523102254.png","x":-1140,"y":760,"width":1840,"height":100},
+		{"id":"c44688c795b52bca","type":"text","text":"Allocation looks good","x":-740,"y":920,"width":160,"height":80},
+		{"id":"713cd7a645f0fd17","type":"file","file":"temp/Images/Pasted image 20240523102340.png","x":-1102,"y":1080,"width":1245,"height":280},
+		{"id":"bff6df94db666491","type":"file","file":"temp/Images/Pasted image 20240523102633.png","x":-1080,"y":-1040,"width":681,"height":240},
+		{"id":"ad338e445f57417a","type":"text","text":"SELECT *\nFROM mi_du \nWHERE event_time BETWEEN '2024-03-03 19:00:45.513' AND '2024-05-15 20:30:00'\n  AND change_field = 'Container Id'\n  AND du_type = 'FULL PALLET'\n  AND from_value IS NOT NULL\nORDER BY event_time;\n\n#sql","x":-1254,"y":-1360,"width":709,"height":243}
+	],
+	"edges":[
+		{"id":"c9fba7ffcd321449","fromNode":"e9a16c344ea0279d","fromSide":"bottom","toNode":"01af0bcfab02132e","toSide":"top"},
+		{"id":"764dc4740ba1d572","fromNode":"8a7de04f1c7bc8f6","fromSide":"bottom","toNode":"cac4637857c69eb0","toSide":"top"},
+		{"id":"18157473f9c147cd","fromNode":"c44688c795b52bca","fromSide":"bottom","toNode":"713cd7a645f0fd17","toSide":"top"},
+		{"id":"efc220bb8a1196fa","fromNode":"ad53c2eee4898cae","fromSide":"bottom","toNode":"97b95c21ac7ad2f5","toSide":"top"},
+		{"id":"c337d4eada21d2da","fromNode":"ad338e445f57417a","fromSide":"bottom","toNode":"bff6df94db666491","toSide":"top"}
+	]
+}

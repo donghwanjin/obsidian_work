@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"958510633ba4a02e","type":"text","text":"WCS_MOVE_REQUEST only requires send Move Request Statue Message\nbut this case system send completed message \nend of day process deleted Move Request record\nand TULL message triggered sending Stock Data Adjust message","x":-460,"y":-240,"width":863,"height":140},
+		{"id":"be0c118bc34735e2","type":"file","file":"temp/Images/Pasted image 20240523145240.png","x":-460,"y":920,"width":1450,"height":453},
+		{"id":"7ccb2811cffedc92","type":"text","text":"SELECT *\nFROM mi_move_request\nWHERE event_time BETWEEN '2024-03-03 19:00:45.513' AND '2024-05-15 20:30:00'\n  AND move_request_id = 'MOV24031302785900001'\nORDER BY event_time;","x":-360,"y":680,"width":900,"height":140},
+		{"id":"921e826b9b3a85db","type":"file","file":"temp/Images/Pasted image 20240523144828.png","x":-514,"y":39,"width":1450,"height":540}
+	],
+	"edges":[
+		{"id":"bc4185b702327ad1","fromNode":"958510633ba4a02e","fromSide":"bottom","toNode":"921e826b9b3a85db","toSide":"top"},
+		{"id":"74abdf6499790fa3","fromNode":"7ccb2811cffedc92","fromSide":"bottom","toNode":"be0c118bc34735e2","toSide":"top"}
+	]
+}

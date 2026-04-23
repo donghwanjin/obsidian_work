@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"13e6ebd0db8cfcf4","x":-258,"y":-252,"width":416,"height":169,"type":"text","text":"CheckDus\n\nLocking mechanism\nLooping all DU records\nHandling DU records\nUnlocking mechanism"},
+		{"id":"0a203ea408f4c579","type":"text","text":"BuildOrders\n\nInitialization and Locking\nOrder list creation\nOrder processing loop\nPick list building and DU creation\nfinalization and Unlocking","x":-237,"y":5,"width":416,"height":169},
+		{"id":"1dfd44b085b0e774","x":-178,"y":503,"width":834,"height":188,"type":"text","text":"It is other project GTP op issue\n\norder configured not allowed share du \nbut op_du_build process does mixed up single du with multiple orders. \n\nOP_DU_BUILD_CanAddPickToPot is where this is normally controlled"},
+		{"id":"5279e6291abde5f0","x":-70,"y":199,"width":581,"height":270,"type":"text","text":"OP_DU_BUILD_CanAddPickToPot\n\nMain Loop iterating  throught picks\nAdding Pick to an existing pot\nhandling pot addition or failure\nNew pot creation"}
+	],
+	"edges":[]
+}

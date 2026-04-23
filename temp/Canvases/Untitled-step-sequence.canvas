@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"4a8c93a54c320ec2","type":"text","text":"clear data : delete variable table, ","x":-325,"y":-496,"width":225,"height":64},
+		{"id":"1f8341a5598c2a74","x":-325,"y":-363,"width":225,"height":61,"type":"text","text":"create step sequence and description"},
+		{"id":"f0e6cf49cfb34738","type":"text","text":"select function","x":-325,"y":-248,"width":225,"height":61},
+		{"id":"08474d2ba21417b6","type":"text","text":"set all args ","x":-325,"y":-147,"width":225,"height":61},
+		{"id":"601e83103d2bdcb2","type":"text","text":"what if user want change function what to do defined variable value?","x":-325,"y":-24,"width":283,"height":97}
+	],
+	"edges":[]
+}

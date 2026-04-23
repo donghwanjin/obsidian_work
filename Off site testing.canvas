@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"c50bbf312a5142ba","type":"group","x":-429,"y":3651,"width":506,"height":555,"color":"6","label":"Configuration"},
+		{"id":"be3415856fe21320","type":"group","x":-402,"y":3724,"width":370,"height":146,"color":"1","label":"Laptop"},
+		{"id":"015f565ded79e331","type":"group","x":-183,"y":4029,"width":216,"height":134,"color":"4","label":"TestRail"},
+		{"id":"00f93ca07cd712df","type":"file","file":"off-site testing plan.md","x":-229,"y":-297,"width":568,"height":281},
+		{"id":"d1b4dd6e636acf4c","type":"text","text":"Dematic TestRail Off site testing","x":-163,"y":4058,"width":178,"height":68},
+		{"id":"2fde7a01dec15751","type":"text","text":"Excel Frontend","x":-388,"y":3756,"width":134,"height":79},
+		{"id":"c48b59185fbeee52","type":"text","text":"script (API layer)","x":-208,"y":3756,"width":134,"height":79},
+		{"id":"76d3af1cc92fc304","type":"file","file":"Excalidraw/Config generate TestRail.md","x":-145,"y":94,"width":400,"height":397}
+	],
+	"edges":[
+		{"id":"87e70b816dfa8419","fromNode":"2fde7a01dec15751","fromSide":"right","toNode":"c48b59185fbeee52","toSide":"left"},
+		{"id":"ad57a7f84d4947a7","fromNode":"c48b59185fbeee52","fromSide":"bottom","toNode":"d1b4dd6e636acf4c","toSide":"top","label":"Create/update"}
+	]
+}

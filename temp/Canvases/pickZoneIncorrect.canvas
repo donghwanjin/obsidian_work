@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"4a62f9fd3e5fc94f","type":"file","file":"temp/Images/Pasted image 20240912141134.png","x":-496,"y":-232,"width":809,"height":356},
+		{"id":"7bd3dcd87c290a61","type":"file","file":"temp/Images/Pasted image 20240912141156.png","x":-498,"y":191,"width":818,"height":240},
+		{"id":"d6ba5b39fe266705","type":"text","text":"we need to function calc most picked area and return to PickAreaId","x":-472,"y":486,"width":584,"height":71},
+		{"id":"f071c05c64c52e45","type":"text","text":"GLOBAL const volatile char* DU_MostPickedAreaId( REC_NO DuRecNo )\n\n{\n\n  REC_NO         PickRecNo;\n\n  REC_NO         PreviousAreaRecNo, CurrentAreaRecNo;\n\n  DYN_LIST_TYPE *PickList;\n\n  POS_INT        MaxPickCount = NULL_POS_INT;\n\n  POS_INT        CurrentPickCount = NULL_POS_INT;\n\n  REC_NO         MostPickedAreaRecNo = NULL_REC_NO;\n\n  \n\n  if( !DU_ValidRecNo( DuRecNo ) )\n\n    return \"\";\n\n  PickList = DYN_LIST_New( sizeof( REC_NO ), 10, 20 );\n\n  \n\n  LOOP_ALL_DU_PICKS\n\n  {\n\n    DYN_LIST_AddRecNo( PickList, PickRecNo );\n\n  }\n\n  \n\n  DYN_LIST_Sort( PickList, SortByPickArea );\n\n  \n\n  LOOP_ALL_DYN_LIST_REC_NOS ( PickList, PickRecNo )\n\n  {\n\n    CurrentAreaRecNo = PICK_ZONE_GetPickAreaRecNo( PICK_GetPickZoneRecNo( PickRecNo ));\n\n    if( CurrentAreaRecNo == PreviousAreaRecNo )\n\n      CurrentPickCount++;\n\n    else\n\n    {\n\n      if( CurrentPickCount > MaxPickCount )\n\n      {\n\n        MaxPickCount = CurrentPickCount;\n\n        MostPickedAreaRecNo = PreviousAreaRecNo;\n\n      }\n\n  \n\n      PreviousAreaRecNo = CurrentAreaRecNo;\n\n      CurrentPickCount = 1;\n\n    }\n\n  }\n\n  \n\n  DYN_LIST_Free( PickList );\n\n  \n\n  if( CurrentPickCount > MaxPickCount )\n\n    MostPickedAreaRecNo = PreviousAreaRecNo;\n\n  \n\n  if( PICK_AREA_ValidRecNo( MostPickedAreaRecNo ))\n\n    return PICK_AREA_GetPickAreaId( MostPickedAreaRecNo );\n\n  \n\n  return \"\";\n\n}/* DU_MostPickedAreaId */","x":-447,"y":657,"width":614,"height":320},
+		{"id":"d3bd0dbe09716bba","type":"file","file":"Attachments/Pasted image 20240919145906.png","x":-801,"y":1035,"width":1262,"height":371}
+	],
+	"edges":[]
+}

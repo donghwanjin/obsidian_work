@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"708fbc565ab87dfa","type":"text","text":"For Uniqlo level, customer requested a change to have fill levels against despatch category  \nadditional DU plan message is required to show which DUs are cancelled if they don’t meet the  \nconfigured fill level criteria.","x":-308,"y":-405,"width":562,"height":155},
+		{"id":"a59f9a575339c3ed","type":"text","text":"1. Order message from host to include information at line level with a flag (applyFillCriteria =  Y/N), if set to true this will allow WCS to automatically abandon the lines if planned DU  do not meet the fill criteria configured for the parent despatch group\n2.  The DUs which don’t meet the criteria, will be cancelled automatically by WCS.\n3. This would be communicated back to WMS with DU message with holdState = TOO SMALL TO PICK and an order status message with quantity dropped by WCS as abandoned","x":-641,"y":-140,"width":677,"height":271}
+	],
+	"edges":[
+		{"id":"5782cd461a6c51f3","fromNode":"708fbc565ab87dfa","fromSide":"bottom","toNode":"a59f9a575339c3ed","toSide":"top","toEnd":"none"}
+	]
+}

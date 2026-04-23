@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"c23e48cb83507ef7","type":"text","text":"17:36:41.595 RB01: Source TM 2024032911000471 at L1 PCDE01IS02 Sent away (L1 DEWRAP) - Complete","x":-711,"y":-427,"width":562,"height":60},
+		{"id":"d605a9c2245f8334","type":"file","file":"temp/Images/Pasted image 20240530113137.png","x":-652,"y":-277,"width":332,"height":764},
+		{"id":"8536f7fd2de59e62","type":"text","text":"17:41:29.576 RB01: Source TM 2024032911000471 at L1 PCDE01IS02 Sent away (HIGHBAY) - Complete","x":-644,"y":540,"width":533,"height":63},
+		{"id":"78a1b4b70eb38247","type":"text","text":"TM 2024032911000471 at L1 CC01 height -1 weight 142320, reject reason set to CANNOT WRAP","x":-740,"y":1150,"width":584,"height":65},
+		{"id":"1beb7fa8a1ee6350","type":"file","file":"temp/Images/Pasted image 20240530114957.png","x":-664,"y":1341,"width":400,"height":224},
+		{"id":"ed9b04c6c1cc65b6","type":"text","text":"TULL message send StockDataAdjust message","x":-747,"y":1664,"width":584,"height":65},
+		{"id":"db03560110fa49a4","type":"file","file":"temp/Images/Pasted image 20240530115836.png","x":-601,"y":1986,"width":284,"height":400},
+		{"id":"4107807f05409862","type":"text","text":"Operator wrapped manually and induct tm,.... tm looping 4 times and rejected by OVER RECIRCULATION","x":-787,"y":1826,"width":584,"height":65},
+		{"id":"e4a2c7184e939933","type":"file","file":"temp/Images/Pasted image 20240530114759.png","x":-652,"y":654,"width":450,"height":409},
+		{"id":"52a3cd567ead1e49","type":"text","text":"we have around 80 record regarding CANNOT WRAP","x":-532,"y":-1227,"width":250,"height":60},
+		{"id":"5241e4d2b607b449","type":"file","file":"temp/Images/Pasted image 20240530114217.png","x":-705,"y":-1078,"width":822,"height":258},
+		{"id":"1a15d530354c152a","type":"text","text":"Pallet\n\n| length | width | height | weight |\n| ------ | ----- | ------ | ------ |\n| 11     | 1100  | 1470   | 762980 |\n\nSKU\n\n| height | Depth | width |\n| ------ | ----- | ----- |\n| 220    | 135   | 205   |\n\n","x":-697,"y":-774,"width":350,"height":300},
+		{"id":"818d28e90f6667c4","type":"file","file":"temp/Images/Pasted image 20240531142217.png","x":-53,"y":-548,"width":400,"height":341},
+		{"id":"d952af4e1a326693","type":"text","text":"why 471 not a negative pick flag? instead of full pallet??","x":-762,"y":2637,"width":351,"height":53},
+		{"id":"479656153f21b865","type":"file","file":"temp/Images/Pasted image 20240531172643.png","x":-864,"y":2785,"width":766,"height":253},
+		{"id":"f0ff98907de46bcf","type":"file","file":"temp/Images/Pasted image 20240531173339.png","x":-901,"y":3161,"width":906,"height":361},
+		{"id":"fac20a7ae48dc752","type":"text","text":"why we create du and delete repeattly?","x":-810,"y":3068,"width":351,"height":53},
+		{"id":"b629a03a968a3d30","type":"file","file":"temp/Canvases/Can not wrap.md","x":-918,"y":3935,"width":875,"height":747}
+	],
+	"edges":[
+		{"id":"1081557bc47bd847","fromNode":"c23e48cb83507ef7","fromSide":"bottom","toNode":"d605a9c2245f8334","toSide":"top"},
+		{"id":"ec29f053db91f2e5","fromNode":"52a3cd567ead1e49","fromSide":"bottom","toNode":"5241e4d2b607b449","toSide":"top"},
+		{"id":"af26a207958f822b","fromNode":"8536f7fd2de59e62","fromSide":"bottom","toNode":"e4a2c7184e939933","toSide":"top"},
+		{"id":"6cdf522247c72b33","fromNode":"78a1b4b70eb38247","fromSide":"bottom","toNode":"1beb7fa8a1ee6350","toSide":"top"},
+		{"id":"fe03627bc3976c33","fromNode":"4107807f05409862","fromSide":"bottom","toNode":"db03560110fa49a4","toSide":"top"},
+		{"id":"9d45a621be265198","fromNode":"1beb7fa8a1ee6350","fromSide":"bottom","toNode":"ed9b04c6c1cc65b6","toSide":"top"},
+		{"id":"b6311bde17044f47","fromNode":"d605a9c2245f8334","fromSide":"bottom","toNode":"8536f7fd2de59e62","toSide":"top"},
+		{"id":"595235cd91bb5525","fromNode":"e4a2c7184e939933","fromSide":"bottom","toNode":"78a1b4b70eb38247","toSide":"top"},
+		{"id":"92ca52c86c2739fa","fromNode":"ed9b04c6c1cc65b6","fromSide":"bottom","toNode":"4107807f05409862","toSide":"top"},
+		{"id":"0290f960036adc53","fromNode":"1a15d530354c152a","fromSide":"bottom","toNode":"c23e48cb83507ef7","toSide":"top"},
+		{"id":"75476e218caed368","fromNode":"c23e48cb83507ef7","fromSide":"right","toNode":"818d28e90f6667c4","toSide":"left"},
+		{"id":"096d0469ec9f600f","fromNode":"d952af4e1a326693","fromSide":"bottom","toNode":"479656153f21b865","toSide":"top"},
+		{"id":"30d70a066ff6be0d","fromNode":"fac20a7ae48dc752","fromSide":"bottom","toNode":"f0ff98907de46bcf","toSide":"top"}
+	]
+}

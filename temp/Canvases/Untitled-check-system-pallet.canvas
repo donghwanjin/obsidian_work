@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"4577f053e4f4a32c","type":"text","text":"CheckSystemPalletForReject","x":-530,"y":175,"width":250,"height":60},
+		{"id":"4227e065ab6228ba","type":"text","text":"BP_SetBit( RejectReason, TM_REJECT_REASON_INVALID_ID, TRUE );","x":-272,"y":-229,"width":365,"height":87},
+		{"id":"644562f1308718fb","type":"text","text":"CheckDPalletBarcodeForReject","x":-405,"y":-23,"width":299,"height":62},
+		{"id":"207d18df8450a29c","x":-17,"y":-21,"width":282,"height":60,"type":"text","text":"MH_RBG_DCI_ProcessPsArrival"},
+		{"id":"e724e5f5e9fc2fc3","type":"text","text":"MH_DCI_ProcessLevel3Message","x":154,"y":195,"width":282,"height":60},
+		{"id":"bb45814f2c6fc062","x":-142,"y":195,"width":250,"height":60,"type":"text","text":"ProcessIncomingMessages"},
+		{"id":"6187e67cb3feb02e","x":-530,"y":354,"width":250,"height":60,"color":"2","type":"text","text":"MH_PC_DCI_CheckTmForReject"},
+		{"id":"43c2095aaa24b371","x":-530,"y":512,"width":250,"height":60,"type":"text","text":"ProcessArrival"}
+	],
+	"edges":[
+		{"id":"fc0fd37b1c5c69f7","fromNode":"4227e065ab6228ba","fromSide":"bottom","toNode":"644562f1308718fb","toSide":"top"},
+		{"id":"56449884aa22f8f5","fromNode":"644562f1308718fb","fromSide":"bottom","toNode":"4577f053e4f4a32c","toSide":"top"},
+		{"id":"7eef11b0b5d4419a","fromNode":"4227e065ab6228ba","fromSide":"bottom","toNode":"207d18df8450a29c","toSide":"top"},
+		{"id":"cb93bf84b82620d6","fromNode":"207d18df8450a29c","fromSide":"bottom","toNode":"bb45814f2c6fc062","toSide":"top"},
+		{"id":"fe64cf7dd7b2afbe","fromNode":"207d18df8450a29c","fromSide":"bottom","toNode":"e724e5f5e9fc2fc3","toSide":"top"},
+		{"id":"32671971feb8c25c","fromNode":"4577f053e4f4a32c","fromSide":"bottom","toNode":"6187e67cb3feb02e","toSide":"top"},
+		{"id":"c54a09460b4d4ccd","fromNode":"6187e67cb3feb02e","fromSide":"bottom","toNode":"43c2095aaa24b371","toSide":"top"}
+	]
+}

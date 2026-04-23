@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"077280c1611743ad","type":"group","x":-789,"y":-8,"width":1016,"height":349,"label":"next release"},
+		{"id":"cbeaf46c212e38c1","x":-792,"y":-409,"width":1009,"height":330,"type":"group","label":"Current"},
+		{"id":"f759f79c8a7bacc6","x":-224,"y":-304,"width":400,"height":183,"color":"4","type":"group","label":"RUN"},
+		{"id":"5d20951878dcb639","type":"group","x":-649,"y":-302,"width":400,"height":183,"color":"1","label":"Standby"},
+		{"id":"92ec6873e79bc68c","type":"group","x":-221,"y":85,"width":400,"height":183,"color":"1","label":"Standby"},
+		{"id":"f5612d544fc79d2e","type":"group","x":-640,"y":79,"width":400,"height":183,"color":"4","label":"Run"},
+		{"id":"8c5fe2fcaa815255","type":"text","text":"KOYNWCS-P2\n192.168.11.11\nversion 91","x":-132,"y":139,"width":250,"height":84},
+		{"id":"8136985c2fd99ae9","type":"text","text":"KOYNWCS-P2\n192.168.11.11\nversion 91","x":-135,"y":-250,"width":250,"height":84},
+		{"id":"89a13b1b3ebc4674","x":-550,"y":-240,"width":204,"height":89,"type":"text","text":"KOYNWCS-P1\n192.168.11.12\nversion 90"},
+		{"id":"210023180b0431b6","type":"text","text":"KOYNWCS-P1\n192.168.11.12\nversion 92","x":-541,"y":141,"width":204,"height":89}
+	],
+	"edges":[]
+}

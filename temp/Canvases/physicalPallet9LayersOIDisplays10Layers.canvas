@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"84d9a6c8d5dd7fcf","type":"text","text":"this pallet picked 12 layers which is odd","x":-253,"y":-432,"width":370,"height":60},
+		{"id":"804b4b6d49232980","type":"text","text":"sku : 26000\n36 cases per layer\n396 cases per pallet\n11 layer per pallet","x":-518,"y":-521,"width":222,"height":128},
+		{"id":"b5397482dbe496e2","type":"file","file":"temp/Images/Pasted image 20240807161108.png","x":-553,"y":-280,"width":809,"height":234},
+		{"id":"072a60b67f926c02","type":"file","file":"temp/Images/Pasted image 20240807161512.png","x":-576,"y":41,"width":864,"height":177},
+		{"id":"0736ccd991e8b3f1","type":"file","file":"temp/Images/Pasted image 20240807161606.png","x":344,"y":-259,"width":1089,"height":197},
+		{"id":"ab341d5781fb0ca7","type":"file","file":"temp/Images/Pasted image 20240807161639.png","x":-1591,"y":-348,"width":837,"height":445},
+		{"id":"cd3bdd5506a1905a","type":"text","text":"SELECT *\nFROM mi_pick\nWHERE event_time BETWEEN '2024-07-15 19:00:45.513' AND '2024-08-15 20:30:00'\n  AND order_id = '2407181173'\n  AND order_line_id = '8'\nORDER BY event_time;","x":-678,"y":310,"width":653,"height":179},
+		{"id":"54d8d7bbb4c762f8","type":"text","text":"SELECT *\nFROM mi_pick\nWHERE event_time BETWEEN '2024-07-15 19:00:45.513' AND '2024-08-15 20:30:00'\n  AND order_id = '2407181172'\n  AND order_line_id = '16'\nORDER BY event_time;","x":23,"y":305,"width":649,"height":178},
+		{"id":"a0b56889b620c427","type":"text","text":"Almost same time received order \nboth first pick reserved other stock tm( 2024062611000513, 2024061711000074 )\nboth second to last picks reserved same stock tm ( 2024062211000012 ) total 8 picks and remain 1 pick\nat the same time both first pick reserved stock tm( 2024062211000012 )\ntotal 10 picks over booked 1 pick\n","x":-362,"y":570,"width":645,"height":242},
+		{"id":"9e6c2c2fd9b3f6dc","type":"text","text":"DU : 0006869168","x":398,"y":585,"width":193,"height":58},
+		{"id":"e7c1817512b1b5bf","type":"text","text":"DU : 0006869173","x":418,"y":700,"width":184,"height":56},
+		{"id":"e6b18550604e2ec1","type":"text","text":"DU : 0006869191","x":-662,"y":557,"width":191,"height":50},
+		{"id":"d50890a2ad923eaa","type":"text","text":"SELECT *\nFROM mi_mh_depal_task\nWHERE event_time BETWEEN '2024-07-15 19:00:45.513' AND '2024-08-15 20:30:00'\n  AND dest_tm_id = 'EP-011-4224'\n  AND source_tm_id = '2024062211000012'\nORDER BY event_time;\n\nSELECT *\nFROM mi_mh_depal_task\nWHERE event_time BETWEEN '2024-07-15 19:00:45.513' AND '2024-08-15 20:30:00'\n  AND dest_tm_id = 'EP-011-4222'\nORDER BY event_time;","x":-378,"y":-959,"width":758,"height":341},
+		{"id":"41defd371a7cc65b","type":"text","text":"SELECT *\nFROM mi_stock\nWHERE event_time BETWEEN '2024-07-15 19:00:45.513' AND '2024-08-15 20:30:00'\n  AND tm_id = '2024062211000012'\nORDER BY event_time;","x":-479,"y":-1199,"width":784,"height":153}
+	],
+	"edges":[
+		{"id":"304132df489c4203","fromNode":"84d9a6c8d5dd7fcf","fromSide":"bottom","toNode":"b5397482dbe496e2","toSide":"top"},
+		{"id":"efa3a82a38d34005","fromNode":"804b4b6d49232980","fromSide":"bottom","toNode":"b5397482dbe496e2","toSide":"top"},
+		{"id":"01db4a977ed0b512","fromNode":"b5397482dbe496e2","fromSide":"bottom","toNode":"072a60b67f926c02","toSide":"top"},
+		{"id":"01f1b66ba96ca006","fromNode":"b5397482dbe496e2","fromSide":"right","toNode":"0736ccd991e8b3f1","toSide":"left","toEnd":"none"},
+		{"id":"5c87299c7b4827b3","fromNode":"b5397482dbe496e2","fromSide":"left","toNode":"ab341d5781fb0ca7","toSide":"right","toEnd":"none"},
+		{"id":"2ae9b01bbef82c93","fromNode":"cd3bdd5506a1905a","fromSide":"bottom","toNode":"e6b18550604e2ec1","toSide":"top"},
+		{"id":"5dc2589e0adde014","fromNode":"54d8d7bbb4c762f8","fromSide":"bottom","toNode":"9e6c2c2fd9b3f6dc","toSide":"top"},
+		{"id":"99b06b9ca2e9b61a","fromNode":"9e6c2c2fd9b3f6dc","fromSide":"bottom","toNode":"e7c1817512b1b5bf","toSide":"top"}
+	]
+}

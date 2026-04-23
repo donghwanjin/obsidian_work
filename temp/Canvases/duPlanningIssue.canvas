@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"42ac3ec4810e6803","type":"text","text":"OP_DU_BUILD_LAYER_BuildPickList","x":-215,"y":-197,"width":250,"height":60},
+		{"id":"046e559dffd11771","type":"text","text":"add all Order Picks \nthen sort pick by \n- prod, \n- height \n- weight\n- order line id\n- PickRecNo","x":-207,"y":-53,"width":228,"height":265},
+		{"id":"04427ff8885fff11","type":"text","text":"OP_DU_BUILD_LAYER_BuildFullPalletPicks","x":198,"y":-189,"width":232,"height":63},
+		{"id":"cca3a6d5a46e8072","type":"text","text":"Create PickList\nsort pick by \n- prod, \n- order\n- Stock TmRecNo\n- PickRecNo","x":182,"y":-47,"width":256,"height":222},
+		{"id":"a088e20c480b8cb5","type":"text","text":"OP_DU_BUILD_LAYER_BuildDuLayerPots","x":543,"y":-191,"width":232,"height":63},
+		{"id":"8d56fe146e937983","type":"file","file":"temp/Images/Pasted image 20240916165635.png","x":-168,"y":288,"width":927,"height":267},
+		{"id":"53abc4232cf83057","type":"file","file":"temp/Images/Pasted image 20240916165716.png","x":-147,"y":613,"width":595,"height":490},
+		{"id":"77fba08ccb02f12a","type":"file","file":"temp/Images/Pasted image 20240919092322.png","x":-195,"y":1136,"width":585,"height":406}
+	],
+	"edges":[
+		{"id":"593c80581e20a522","fromNode":"42ac3ec4810e6803","fromSide":"bottom","toNode":"046e559dffd11771","toSide":"top","toEnd":"none"},
+		{"id":"f0cd968ebf35b824","fromNode":"42ac3ec4810e6803","fromSide":"right","toNode":"04427ff8885fff11","toSide":"left"},
+		{"id":"6680f7ac6a43704c","fromNode":"04427ff8885fff11","fromSide":"bottom","toNode":"cca3a6d5a46e8072","toSide":"top","toEnd":"none"}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"f367fd15312c588c","type":"file","file":"temp/Images/Pasted image 20240523110431.png","x":-280,"y":-220,"width":400,"height":373},
+		{"id":"9f849d0fe5b5c339","type":"text","text":"received sample label from site","x":-280,"y":-320,"width":365,"height":60},
+		{"id":"8d36c75b75e18568","type":"file","file":"temp/Images/Pasted image 20240523110614.png","x":-280,"y":320,"width":400,"height":119},
+		{"id":"508e91d5a046437e","type":"file","file":"temp/Images/Pasted image 20240523110622.png","x":-280,"y":520,"width":400,"height":93},
+		{"id":"f91e0d2c27a97342","type":"text","text":"found out same as ChilsungDespatchCVS_300.zpl\nalso added missing field ","x":-306,"y":220,"width":452,"height":60}
+	],
+	"edges":[]
+}

@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"5d9192674a80d1c7","type":"group","x":-364,"y":-258,"width":382,"height":805,"label":"web_api_cgi"},
+		{"id":"44c4d6f261767508","type":"text","text":"Create Order and Picks","x":-313,"y":102,"width":222,"height":50},
+		{"id":"25daa8103699cf27","x":-284,"y":167,"width":266,"height":366,"color":"3","type":"text","text":"ProcessOrderMessage\n\nOrder is created based on fields sent in message\n\nPick record created for each order line in the message\n\nOrderLindId set on each pick so they can be traced back to the original line after picks have been split"},
+		{"id":"0a68cba802fb010d","type":"text","text":"Message from Host","x":-314,"y":-122,"width":222,"height":50},
+		{"id":"b140c6e0e382ec62","type":"text","text":"Start","x":-256,"y":-239,"width":106,"height":50}
+	],
+	"edges":[
+		{"id":"c80be060f93eab10","fromNode":"b140c6e0e382ec62","fromSide":"bottom","toNode":"0a68cba802fb010d","toSide":"top"},
+		{"id":"4805cbcb43a144f0","fromNode":"0a68cba802fb010d","fromSide":"bottom","toNode":"44c4d6f261767508","toSide":"top","color":"6","label":"Host Order message"}
+	]
+}

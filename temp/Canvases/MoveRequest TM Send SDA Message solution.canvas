@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"5f019da127914480","type":"text","text":"1. I think Delivered or Completed message should handle by ProcessLeft instead of HandleTurp\n2. but sometime PLC missing TULL message and that is why it handle by HandleTurp","x":-360,"y":-220,"width":638,"height":160},
+		{"id":"cdf09e17efaeb059","type":"file","file":"temp/Images/Pasted image 20240523145952.png","x":78,"y":236,"width":400,"height":75},
+		{"id":"725850960d0babac","type":"text","text":"system clear MoveReason unless WCS_MOVE_REQUEST","x":-360,"y":-40,"width":552,"height":62},
+		{"id":"38966a4cfb598f80","type":"file","file":"temp/Images/Pasted image 20240523145840.png","x":-360,"y":480,"width":399,"height":118},
+		{"id":"3232104ea04912cf","type":"text","text":"after system check MoveReason and does same as MoveRequest case even MoveRequest record is deleted.","x":-360,"y":360,"width":552,"height":62},
+		{"id":"6ef82015988fea34","type":"file","file":"temp/Images/Pasted image 20240523145827.png","x":-359,"y":74,"width":400,"height":244}
+	],
+	"edges":[]
+}

@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"5ebb563ddb5bbf03","type":"group","x":-692,"y":-151,"width":948,"height":535,"color":"5","label":"Reload "},
+		{"id":"f13b8ede83bc8fdd","type":"group","x":-86,"y":-525,"width":338,"height":275,"color":"6","label":"Final "},
+		{"id":"b0dcff115967d1ce","type":"group","x":-413,"y":-524,"width":295,"height":275,"color":"2","label":"Customer (hub) 3rd party"},
+		{"id":"2c473f6a7e313801","type":"group","x":-694,"y":-527,"width":253,"height":275,"color":"5","label":"MoNDC"},
+		{"id":"28761efdf1752f69","type":"text","text":"consigneeName\" : \"IBIS Bamaga\"","x":-62,"y":-483,"width":292,"height":53},
+		{"id":"8752cb2144d05dab","type":"text","text":"consigneeName\" : \"IBIS Hammond Island\"","x":-63,"y":-386,"width":292,"height":66},
+		{"id":"227ece959950fa7a","type":"text","text":"448208","x":-340,"y":-426,"width":162,"height":60},
+		{"id":"18e54bb7fd3576f9","type":"text","text":"Order 3869905","x":-655,"y":-490,"width":173,"height":50},
+		{"id":"ad488c5276e54f4f","type":"text","text":"Order 3869909","x":-651,"y":-363,"width":166,"height":57},
+		{"id":"6550f341f00ff7fd","type":"text","text":"two pallets","x":-666,"y":-131,"width":207,"height":80}
+	],
+	"edges":[
+		{"id":"82119d832f565c74","fromNode":"18e54bb7fd3576f9","fromSide":"right","toNode":"227ece959950fa7a","toSide":"left"},
+		{"id":"30178e5ef42afd8a","fromNode":"ad488c5276e54f4f","fromSide":"right","toNode":"227ece959950fa7a","toSide":"left"},
+		{"id":"5f82d23b995ee7b7","fromNode":"227ece959950fa7a","fromSide":"right","toNode":"28761efdf1752f69","toSide":"left"},
+		{"id":"e4b008530f3a89da","fromNode":"227ece959950fa7a","fromSide":"right","toNode":"8752cb2144d05dab","toSide":"left"}
+	]
+}

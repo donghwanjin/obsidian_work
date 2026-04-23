@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"78f39b0cf48012e8","type":"text","text":"we need to find out why it requires negative pick more than 2?","x":-316,"y":-285,"width":438,"height":66},
+		{"id":"2f555dfcb4a5662a","type":"text","text":"we need to find out how customer handle SWAP fail TM","x":-319,"y":-167,"width":438,"height":66,"color":"1"},
+		{"id":"efb776db01399cc1","type":"text","text":"if they send new stock delivery message CANNOT WRAP TM also need same way","x":-320,"y":-11,"width":438,"height":66}
+	],
+	"edges":[
+		{"id":"957351a635a0fa3f","fromNode":"2f555dfcb4a5662a","fromSide":"bottom","toNode":"efb776db01399cc1","toSide":"top"}
+	]
+}

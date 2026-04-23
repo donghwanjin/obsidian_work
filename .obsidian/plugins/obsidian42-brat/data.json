@@ -1,0 +1,24 @@
+{
+  "pluginList": [
+    "sdkasper/lean-obsidian-terminal"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "sdkasper/lean-obsidian-terminal",
+      "version": "latest"
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "globalTokenName": "",
+  "personalAccessToken": "",
+  "selectLatestPluginVersionByDefault": false,
+  "allowIncompatiblePlugins": true
+}

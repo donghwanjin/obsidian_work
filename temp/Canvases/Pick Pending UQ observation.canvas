@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"9af7e88c41fe8db6","type":"group","x":183,"y":-1081,"width":880,"height":710,"color":"1","label":"Bad"},
+		{"id":"80ac35532b87a53c","type":"group","x":-680,"y":-1116,"width":800,"height":770,"color":"4","label":"Good case"},
+		{"id":"270ab76fe69b64be","type":"file","file":"temp/Images/Pasted image 20240524162239.png","x":-600,"y":-916,"width":616,"height":140},
+		{"id":"f3b9ea0d2531a99b","type":"text","text":"Good order op_release process set  Wait_allocation","x":-580,"y":-1056,"width":353,"height":80,"color":"4"},
+		{"id":"5e4086d007af4216","type":"text","text":"Good Pick Pending => Wait_allocation","x":-553,"y":-736,"width":250,"height":60,"color":"4"},
+		{"id":"728fdd89f6415fd2","type":"file","file":"temp/Images/Pasted image 20240524094534.png","x":-600,"y":-596,"width":594,"height":180},
+		{"id":"21fe43b5bb01e3a7","type":"file","file":"temp/Images/Pasted image 20240524143252.png","x":303,"y":-891,"width":661,"height":120},
+		{"id":"b769ac13b9458e19","type":"file","file":"temp/Images/Pasted image 20240524143409.png","x":309,"y":-631,"width":685,"height":180},
+		{"id":"d25a46d8d11355fe","type":"file","file":"temp/Images/Pasted image 20240530090306.png","x":-665,"y":-130,"width":858,"height":387},
+		{"id":"09b3c0a523bb15e7","type":"text","text":"if somehow one of pick pending to Unsatisfiable state\nbased on cut off time it will release automatically....","x":-648,"y":-299,"width":605,"height":73},
+		{"id":"256e66ef14fea78f","type":"text","text":"Issue... Pick UNSATISFIABLE initial","x":363,"y":-731,"width":321,"height":60,"color":"1"},
+		{"id":"5e41b0d71598df68","type":"text","text":"Issue... Pending =>UNSATISFIABLE","x":384,"y":-1011,"width":250,"height":60,"color":"1"},
+		{"id":"ec4e0ee3e2ad1513","type":"text","text":"checked all OP_RSVN_UpdatePick and this else condition is possible update pick from Pending...","x":331,"y":-289,"width":669,"height":81},
+		{"id":"6e5352a65f4575ba","type":"file","file":"temp/Images/Pasted image 20240530100810.png","x":407,"y":-123,"width":623,"height":469}
+	],
+	"edges":[
+		{"id":"0c60576283b9bdba","fromNode":"5e4086d007af4216","fromSide":"bottom","toNode":"728fdd89f6415fd2","toSide":"top"},
+		{"id":"e0d954f4f1ad1eb7","fromNode":"5e41b0d71598df68","fromSide":"bottom","toNode":"21fe43b5bb01e3a7","toSide":"top"},
+		{"id":"542cf1d881b81151","fromNode":"256e66ef14fea78f","fromSide":"bottom","toNode":"b769ac13b9458e19","toSide":"top"},
+		{"id":"3cdb63762237aafb","fromNode":"f3b9ea0d2531a99b","fromSide":"bottom","toNode":"270ab76fe69b64be","toSide":"top"},
+		{"id":"f430d9a6b81dae7a","fromNode":"09b3c0a523bb15e7","fromSide":"bottom","toNode":"d25a46d8d11355fe","toSide":"top"},
+		{"id":"9e06a0b2c0dbe72b","fromNode":"ec4e0ee3e2ad1513","fromSide":"bottom","toNode":"6e5352a65f4575ba","toSide":"top"}
+	]
+}

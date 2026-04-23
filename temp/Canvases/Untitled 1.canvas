@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"93be80439f11c5cf","type":"group","x":128,"y":-572,"width":292,"height":205,"color":"2","label":"K7 Pick Zone MS"},
+		{"id":"cd9c6bba58fd5183","type":"group","x":-383,"y":-600,"width":283,"height":197,"color":"1","label":"K7 Pick Zone Manual"},
+		{"id":"3b5e899f1d3ecb2c","type":"group","x":-383,"y":-812,"width":268,"height":131,"color":"4","label":"K7 GTP"},
+		{"id":"88d51dd0b019d762","type":"text","text":"BuildOrders();\nOP_DU_BUILD_MatchPotsToDus( &OP_DU_DuBuilt );","x":-391,"y":74,"width":557,"height":156},
+		{"id":"3b87938a11bb95c3","type":"text","text":"```\nGLOBAL REC_NO DU_GetMostPickZone( REC_NO DuRecNo )\n{\n  REC_NO         PickRecNo;\n  POS_INT        Gtp, Dps, Msdps;\n  \n  if( !DU_ValidRecNo( DuRecNo ) )\n    return FALSE;\n  \n  LOOP_ALL_DU_PICKS\n  {\n    if( GL_InList( PICK_GetPickState( PickRecNo ), OP_STATE_FINISHED ))\n      continue;\n\n    if( ST_Match( PICK_AREA_GetPickAreaId( PICK_GetPickAreaRecNo( PickRecNo )), \"K7 Pick Zone MS\" ))\n      Msdps++;\n\n    else if( ST_Match( PICK_AREA_GetPickAreaId( PICK_GetPickAreaRecNo( PickRecNo )), \"K7 GTP\" ))\n      Gtp++;\n\n    else if( ST_Match( PICK_AREA_GetPickAreaId( PICK_GetPickAreaRecNo( PickRecNo )), \"K7 Pick Zone Manual\" ))\n      Dps++;\n  }\n\n  if( Gtp >= Dps && Gtp >= Msdps )\n    return PICK_AREA_FindPickAreaId( \"K7 GTP\" );\n\n  else if( Dps >= Gtp && Dps >= Msdps )\n    return PICK_AREA_FindPickAreaId( \"K7 Pick Zone Manual\" );\n\n  else\n    return PICK_AREA_FindPickAreaId( \"K7 Pick Zone MS\" );\n\n} /* DU_GetMostPickZone */\n```","x":-481,"y":446,"width":1021,"height":893},
+		{"id":"3c402f533882b228","type":"text","text":"PICK MODULE 006\nPICK MODULE 007\nPICK MODULE 008\nPICK MODULE 009\nPICK MODULE 010","x":167,"y":-542,"width":208,"height":153},
+		{"id":"ca5c81ea15ecad10","type":"text","text":"PICK MODULE 001\nPICK MODULE 002\nPICK MODULE 003\nPICK MODULE 004\nPICK MODULE 005","x":-341,"y":-579,"width":199,"height":153},
+		{"id":"82bf162929f3cdff","type":"text","text":"K7 GTP","x":-315,"y":-776,"width":119,"height":61},
+		{"id":"6a2e410b02401c5d","type":"text","text":"DPS","x":-29,"y":-531,"width":151,"height":59},
+		{"id":"f53623be64c126e5","type":"text","text":"GTP","x":-46,"y":-776,"width":151,"height":59},
+		{"id":"28e92b7f5b80b02f","type":"file","file":"temp/Images/Pasted image 20240611160944.png","x":-391,"y":-204,"width":572,"height":203},
+		{"id":"54ad0c25541274f4","type":"text","text":"APS no use","x":446,"y":-779,"width":151,"height":59},
+		{"id":"23c8a959fcdad3b4","type":"text","text":"MSDPS","x":477,"y":-500,"width":151,"height":59}
+	],
+	"edges":[
+		{"id":"0efebd90b3d978fc","fromNode":"93be80439f11c5cf","fromSide":"right","toNode":"23c8a959fcdad3b4","toSide":"left"},
+		{"id":"42a7c103beddb807","fromNode":"cd9c6bba58fd5183","fromSide":"right","toNode":"6a2e410b02401c5d","toSide":"left"},
+		{"id":"31a978c80b2ed6a9","fromNode":"3b5e899f1d3ecb2c","fromSide":"right","toNode":"f53623be64c126e5","toSide":"left"}
+	]
+}

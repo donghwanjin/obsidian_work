@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"858b7acbe7582660","type":"file","file":"temp/Images/Pasted image 20240523105500.png","x":-480,"y":-340,"width":400,"height":336},
+		{"id":"e3846ccfda4c4496","type":"text","text":"ChilsungDespatchCoupang_300.zpl is missing","x":-473,"y":-431,"width":386,"height":60},
+		{"id":"04f316ad8d8d03f7","type":"file","file":"temp/Images/Pasted image 20240523110110.png","x":-481,"y":-526,"width":400,"height":74}
+	],
+	"edges":[]
+}

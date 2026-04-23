@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"b93972b1afc22874","type":"file","file":"temp/Images/Pasted image 20240523104131.png","x":-300,"y":-180,"width":400,"height":104},
+		{"id":"b87947a58051a28c","type":"text","text":"Bucket list sort logic for CH order","x":-286,"y":-323,"width":250,"height":60},
+		{"id":"f197d50aec3166a1","type":"file","file":"temp/Images/Pasted image 20240523104125.png","x":-300,"y":80,"width":400,"height":258},
+		{"id":"af3144e09ec866be","type":"text","text":"Full pallet first then Bbe and productionDate","x":-260,"y":-40,"width":250,"height":60},
+		{"id":"6eb8dd1c33173404","type":"text","text":"SELECT *\nFROM mi_du \nWHERE event_time BETWEEN '2024-05-15 19:00:45.513' AND '2024-05-26 20:30:00'\n  AND change_field = 'Container Id'\n  AND du_type = 'FULL PALLET'\n  AND from_value IS NOT NULL\nORDER BY event_time;","x":-390,"y":385,"width":690,"height":215},
+		{"id":"6d2b8d380ffdce4e","type":"file","file":"temp/Images/Pasted image 20240524121946.png","x":-335,"y":660,"width":580,"height":308}
+	],
+	"edges":[
+		{"id":"148a01392e759d74","fromNode":"b87947a58051a28c","fromSide":"bottom","toNode":"b93972b1afc22874","toSide":"top"},
+		{"id":"c70ac1fc8047fb3d","fromNode":"af3144e09ec866be","fromSide":"bottom","toNode":"f197d50aec3166a1","toSide":"top"},
+		{"id":"080e63f56daccf06","fromNode":"6eb8dd1c33173404","fromSide":"bottom","toNode":"6d2b8d380ffdce4e","toSide":"top"}
+	]
+}

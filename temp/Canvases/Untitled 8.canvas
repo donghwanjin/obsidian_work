@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"bd756a16a2dcea25","type":"text","text":"3. Check Gtp source loc Action == released","x":-310,"y":113,"width":250,"height":83},
+		{"id":"2ccf9a401c57e911","x":-130,"y":-229,"width":292,"height":83,"type":"text","text":"1. go to GTP OPERATION Dash board"},
+		{"id":"044737a15b6cd745","type":"text","text":"2. can Search 'GPS' ?","x":-129,"y":-79,"width":232,"height":83},
+		{"id":"e282da45aaac2f8f","type":"text","text":"7. ask on site engineer for source loc or Dest TM id","x":25,"y":112,"width":262,"height":86},
+		{"id":"2f8ae58c5f50d283","type":"text","text":"4. check TU ID of TM and check DCI log for case conveyor. you can find bad TUMI or double TUMI","x":-338,"y":264,"width":327,"height":106},
+		{"id":"0f4012963f23f532","type":"text","text":"5. `ut_send_tm_away <tmid>`\n","x":-326,"y":426,"width":288,"height":91},
+		{"id":"0bb5459cd4849e51","type":"text","text":"8. check mi_tm against TM","x":41,"y":281,"width":269,"height":66},
+		{"id":"c15dd445fa0c838a","type":"text","text":"6. check GTP dest loc and tm id. if empty","x":145,"y":-72,"width":232,"height":83},
+		{"id":"873fec15b43b305c","type":"text","text":"9. if you see delete tm, you can ask on site engineer to TUCA","x":69,"y":418,"width":229,"height":83}
+	],
+	"edges":[
+		{"id":"76a99a520bf9194b","fromNode":"2ccf9a401c57e911","fromSide":"bottom","toNode":"044737a15b6cd745","toSide":"top"},
+		{"id":"ad66c01579333080","fromNode":"044737a15b6cd745","fromSide":"bottom","toNode":"bd756a16a2dcea25","toSide":"top","label":"yes"},
+		{"id":"4f752f9045fff78e","fromNode":"044737a15b6cd745","fromSide":"bottom","toNode":"e282da45aaac2f8f","toSide":"top","label":"No"},
+		{"id":"70238bb41816dd91","fromNode":"bd756a16a2dcea25","fromSide":"bottom","toNode":"2f8ae58c5f50d283","toSide":"top"},
+		{"id":"d21f00752e8d024f","fromNode":"2f8ae58c5f50d283","fromSide":"bottom","toNode":"0f4012963f23f532","toSide":"top"},
+		{"id":"4dfd3a61853f8b16","fromNode":"e282da45aaac2f8f","fromSide":"bottom","toNode":"0bb5459cd4849e51","toSide":"top"},
+		{"id":"877c00f9d7c99b28","fromNode":"0bb5459cd4849e51","fromSide":"bottom","toNode":"873fec15b43b305c","toSide":"top"},
+		{"id":"de2d504247f1e0d2","fromNode":"2ccf9a401c57e911","fromSide":"bottom","toNode":"c15dd445fa0c838a","toSide":"top"},
+		{"id":"07a12229181b8688","fromNode":"c15dd445fa0c838a","fromSide":"bottom","toNode":"e282da45aaac2f8f","toSide":"top"}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"22afb9e3f7e0d078","type":"text","text":"so we check TM reject reason if any bit set we send REJECT message","x":-374,"y":-232,"width":636,"height":67},
+		{"id":"705a7df487d80080","type":"file","file":"temp/Images/Pasted image 20240606103159.png","x":-431,"y":-96,"width":924,"height":243}
+	],
+	"edges":[
+		{"id":"2d725813691a4eab","fromNode":"22afb9e3f7e0d078","fromSide":"bottom","toNode":"705a7df487d80080","toSide":"top"}
+	]
+}

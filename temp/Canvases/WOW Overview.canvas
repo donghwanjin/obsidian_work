@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"fa6c99bf3a7c94fa","type":"group","x":-408,"y":-435,"width":1287,"height":406,"color":"2","label":"Building"},
+		{"id":"10e1afcd17cbc41c","type":"group","x":-408,"y":33,"width":805,"height":400,"color":"2","label":"Truck plan"},
+		{"id":"7c26c47c8a0a0913","type":"text","text":"JNDC( MoNDC )","x":169,"y":-200,"width":181,"height":96},
+		{"id":"329edea8b9ac7b01","type":"text","text":"JRDC( MoRDC )","x":135,"y":-379,"width":181,"height":96},
+		{"id":"27646e6d7364e502","type":"file","file":"temp/Images/Pasted image 20240627151113.png","x":-318,"y":-397,"width":400,"height":327},
+		{"id":"84e1a6dd59b18553","type":"file","file":"temp/Images/Pasted image 20240627152325.png","x":-345,"y":86,"width":600,"height":306},
+		{"id":"ed06049140f5054d","type":"text","text":"ASRS 13\ndelayering auto 4\ndelayering manual 4\nErgopal 12 DMS 12 \nPick station 14       DMS 14   Decant 6\nSL2 Sort 2 (Linear sorter)","x":455,"y":-223,"width":370,"height":178},
+		{"id":"2d5a09852514f7c1","type":"text","text":"Container : Indent receiving\n1 size tray and cardboard (Shipper)\nouter case : \ninner case : vendor case\nNo packbuilder  => bubble sequencing =>operator need to use brain make it pallet stable.\nsliding plate : \nproduct : about 9000??","x":450,"y":33,"width":426,"height":239}
+	],
+	"edges":[
+		{"id":"d6a4cd4b5a53e72d","fromNode":"7c26c47c8a0a0913","fromSide":"top","toNode":"329edea8b9ac7b01","toSide":"bottom","toEnd":"none","label":"Air bridge"},
+		{"id":"16a5ba729d52542f","fromNode":"7c26c47c8a0a0913","fromSide":"right","toNode":"ed06049140f5054d","toSide":"left"}
+	]
+}

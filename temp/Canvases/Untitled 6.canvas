@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"a0aa722bedd94c8d","x":-380,"y":-517,"width":511,"height":237,"color":"1","type":"text","text":"04-Apr 10:27 TUMI zone3 to zone1\n\nRTUMIWCS1CC533630OK01NG0180..............CCPA10NP11....CCPA10NP07....TU-WCS-5294467........TR0106000400030000002219OK................294467000000....0100CS575035..............00## \n\nno TURP"},
+		{"id":"2ba47e0a34311f56","x":-347,"y":-216,"width":472,"height":55,"color":"2","type":"text","text":"04-Apr 11:36 customer missing the tm "},
+		{"id":"11d725b4b93202ef","x":-467,"y":-102,"width":800,"height":228,"color":"1","type":"text","text":"04-Apr 11:36:34 TUMI zone3 to zone1\nDEVICE-EPS10[109], User NATHANN, Activity MCAP, State MCAP TM IN TRAY BUFFER NOT ON TASK: OI_MCAP_HandleCallForwardConfirm User NATHANN called forward WCS0129394 at CEPAL10ACC2L1, pallet 79512000000112175\nRTUMIWCS1CC536043OK01NG0180..............CCPA10NP11....CCPA10NP07....TU-WCS-5320702........CS0106000400042500000000OK................185167000000....0100WCS0129394............00##\n\nno TURP"},
+		{"id":"df2716df900c7d7f","type":"text","text":"04-Apr 11:36:57 TUDR from zone3 \nTUDRCC53WCS13080OK01NG0180..............CCPA10NP11..................TU-053-196612.........????00000000000000000000OK------------..00196612000000....0000......................00##\n\nwcs expected WCS0129394 to be process first","x":-457,"y":181,"width":800,"height":158,"color":"4"}
+	],
+	"edges":[
+		{"id":"7b8afb87d8bf12f2","fromNode":"a0aa722bedd94c8d","fromSide":"bottom","toNode":"2ba47e0a34311f56","toSide":"top"},
+		{"id":"f97fa830d4b18102","fromNode":"2ba47e0a34311f56","fromSide":"bottom","toNode":"11d725b4b93202ef","toSide":"top"},
+		{"id":"e63d24033fb4bb7f","fromNode":"11d725b4b93202ef","fromSide":"bottom","toNode":"df2716df900c7d7f","toSide":"top"}
+	]
+}

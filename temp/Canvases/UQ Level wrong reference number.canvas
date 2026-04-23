@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"65b0391777b39e7f","type":"group","x":-740,"y":878,"width":488,"height":400,"color":"4","label":"Good case "},
+		{"id":"8b49b56935a407ec","type":"group","x":-168,"y":869,"width":488,"height":400,"color":"2","label":"Bad case "},
+		{"id":"64c9664a1b01e3b9","type":"file","file":"temp/Images/Pasted image 20240812152353.png","x":-778,"y":-692,"width":1452,"height":240},
+		{"id":"f198865452ca51d4","type":"file","file":"temp/Images/Pasted image 20240812152408.png","x":-772,"y":-336,"width":1444,"height":484},
+		{"id":"c983a0d445914816","type":"file","file":"temp/Images/Pasted image 20240610085545.png","x":-125,"y":1013,"width":396,"height":53},
+		{"id":"d23448524af58418","type":"text","text":"we use DU ID as unique reference numbers","x":-762,"y":1364,"width":250,"height":60},
+		{"id":"4eb66839e1cb20d9","type":"file","file":"temp/Images/Pasted image 20240610085546.png","x":-115,"y":933,"width":400,"height":37},
+		{"id":"1180883b0cfe7e59","type":"file","file":"temp/Images/Pasted image 20240610084849.png","x":-732,"y":964,"width":449,"height":85},
+		{"id":"aded2f8f85ec9c66","type":"file","file":"temp/Images/Pasted image 20240812152442.png","x":-1018,"y":366,"width":2414,"height":260},
+		{"id":"f2d024df6dc596c5","type":"file","file":"temp/Images/Pasted image 20240812152323.png","x":-82,"y":-1158,"width":1045,"height":349},
+		{"id":"cb77af7c3b1043e5","type":"text","text":"why customer had to abandon? du shared 2 orders even order config not allowed to share du","x":-148,"y":1368,"width":397,"height":105},
+		{"id":"c924747f8699abe8","type":"file","file":"temp/Images/Pasted image 20240610085035.png","x":-742,"y":1499,"width":513,"height":327},
+		{"id":"a301e8839511bfe9","type":"file","file":"temp/Images/Pasted image 20240812152658.png","x":-190,"y":1528,"width":400,"height":64},
+		{"id":"f7fda4ba38b8b2a1","type":"file","file":"image (2).png","x":-737,"y":1917,"width":824,"height":257}
+	],
+	"edges":[
+		{"id":"479ac441ff8fd5e0","fromNode":"d23448524af58418","fromSide":"bottom","toNode":"c924747f8699abe8","toSide":"top"},
+		{"id":"34467bac97d75fb9","fromNode":"8b49b56935a407ec","fromSide":"bottom","toNode":"cb77af7c3b1043e5","toSide":"top"},
+		{"id":"d78a0d657a6dbd3e","fromNode":"cb77af7c3b1043e5","fromSide":"bottom","toNode":"a301e8839511bfe9","toSide":"top"}
+	]
+}

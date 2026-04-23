@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"6c654e445dd4a1c0","type":"file","file":"temp/Images/Pasted image 20240826231042.png","x":-447,"y":-191,"width":807,"height":250},
+		{"id":"38a98c1d38e4c0e5","type":"text","text":"MH_DEPALL_DCI_RequestDepallMission","x":213,"y":389,"width":395,"height":50},
+		{"id":"fe2f9fe1199986c2","type":"text","text":"MH_DEPALL_PalletArrived","x":196,"y":203,"width":250,"height":50},
+		{"id":"44d9e881c1acd4b1","type":"text","text":"HandleTurp","x":-85,"y":105,"width":250,"height":60},
+		{"id":"00008b1812f0929f","type":"file","file":"temp/Images/Pasted image 20240826232852.png","x":-385,"y":324,"width":515,"height":184}
+	],
+	"edges":[
+		{"id":"b81e18b3f45eaae1","fromNode":"fe2f9fe1199986c2","fromSide":"bottom","toNode":"38a98c1d38e4c0e5","toSide":"top"},
+		{"id":"976985d644969a9e","fromNode":"44d9e881c1acd4b1","fromSide":"bottom","toNode":"fe2f9fe1199986c2","toSide":"top"},
+		{"id":"33c34183423c6a68","fromNode":"38a98c1d38e4c0e5","fromSide":"left","toNode":"00008b1812f0929f","toSide":"right","toEnd":"none"}
+	]
+}
