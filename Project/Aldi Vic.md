@@ -1,6 +1,8 @@
 ### Git
 [https://gitlab.com/dematic/matflo/matflo-c/aldi/aldi-victoria-2306-wcs](https://gitlab.com/dematic/matflo/matflo-c/aldi/aldi-victoria-2306-wcs "https://gitlab.com/dematic/matflo/matflo-c/aldi/aldi-victoria-2306-wcs")
 
+### Wiki
+[[FMCF]]
 ### Jira
 
 [P2306 Aldi Victoria - Dematic Global JIRA](https://jira.dematic.net/projects/P2306/summary)
@@ -31,7 +33,7 @@ TMC ( temperature monitoring control )
 5. Unknowns going through the crane will need to be identified by the PLC in the ambient highbay crane - (to be confirmed and spec update needed)
 
 #### DMS replen
-[[Algorithms]]
+[[Replen Algorithms]]
 
 https://wiki.dematic.net/spaces/MP/pages/853113358/FMCF-RS+TD+System+Configuration#FMCFRSTD%3ASystemConfiguration-TmSubTypeconfiguration
 

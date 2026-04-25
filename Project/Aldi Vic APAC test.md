@@ -10,6 +10,8 @@
 
 [https://app.powerbi.com/links/nVgXVARWDD?ctid=13c728e0-bb0c-4cf7-8e10-5b327279d6d9&pbi_source=linkShare](https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.powerbi.com%2Flinks%2FnVgXVARWDD%3Fctid%3D13c728e0-bb0c-4cf7-8e10-5b327279d6d9%26pbi_source%3DlinkShare&data=05%7C02%7Cdonghwan.jin%40dematic.com%7C53328ed7160240db106508de0b136b9a%7C13c728e0bb0c4cf78e105b327279d6d9%7C0%7C0%7C638960375350439156%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=lDh5sdV6tSU2QX1g7uhPtVEWagW3LpBefreaZGLHWMc%3D&reserved=0)
 
+### issue
+[[DVF issue performance test due to lack of cpu]]
 
 ### Belrose machine
 
@@ -28,8 +30,8 @@ ssh dm2306@192.168.2.20
 ### sample
 [[paring]]
 ### Volume test
-[[procedure]]
-[[Issue]]
+[[Performance test procedure]]
+[[DVF issue performance test due to lack of cpu]]
 
 ### MIS
 
@@ -54,8 +56,6 @@ RDB_CONN_STRING=dm2306:MaisieKelly0914~@AldiVic
 
 #### Replen
 
-[[AMB-REP-UC143]]
-[[AMB-REP-UC152]]
 
 All exception depalletizer
 

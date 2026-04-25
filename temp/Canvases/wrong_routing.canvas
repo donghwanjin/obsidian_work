@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"e1c53e453e0418a6","type":"file","file":"Daily/2024_05/Attachments/Pasted image 20260413123957.png","x":-317,"y":-356,"width":652,"height":177},
+		{"id":"88aab7cf9e909046","type":"text","text":"prod, sku incomplete state\nabove TMs stored with hold state\nprod, sku completed \nabove TMs changed hold state SKU_DATA_CHANGE","x":-472,"y":-51,"width":538,"height":131},
+		{"id":"84f81fd6e1363697","type":"file","file":"Daily/2024_05/Attachments/Pasted image 20260413124547.png","x":-803,"y":-313,"width":400,"height":92},
+		{"id":"8fdcbdc2c7e1de50","type":"text","text":"select * from mi_sku where event_time > '2026-03-01' and sku_id = 'C200188' order by event_time\n\nselect * from mi_stock where event_time > '2026-03-01' and tm_id = '2026030211000002' order by event_time","x":-1852,"y":-81,"width":691,"height":144},
+		{"id":"3f9437c44b1a0e31","type":"file","file":"Daily/2024_05/Attachments/Pasted image 20260413124718.png","x":-1017,"y":-51,"width":400,"height":114},
+		{"id":"d02c3a161ba3ebb1","type":"text","text":"select * from mi_tm where event_time > '2026-04-13' and final_destination = 'L1 DPVIRTUAL' and selected_destination = 'L1 SW02' order by event_time\n\nselect * from mi_tm where event_time > '2026-04-13' and routing_destination = 'L1 SW02' order by event_time","x":-1104,"y":318,"width":574,"height":213}
+	],
+	"edges":[
+		{"id":"528296348a1d9b5e","fromNode":"e1c53e453e0418a6","fromSide":"bottom","toNode":"88aab7cf9e909046","toSide":"top"},
+		{"id":"f4b10d6853ea3464","fromNode":"e1c53e453e0418a6","fromSide":"left","toNode":"84f81fd6e1363697","toSide":"right"},
+		{"id":"c7434bae797c92df","fromNode":"84f81fd6e1363697","fromSide":"bottom","toNode":"3f9437c44b1a0e31","toSide":"top"},
+		{"id":"c2a9202260eaa0c6","fromNode":"3f9437c44b1a0e31","fromSide":"left","toNode":"8fdcbdc2c7e1de50","toSide":"right"}
+	]
+}

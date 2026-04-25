@@ -1,4 +1,6 @@
-```
+[[How OI display string.canvas|How OI display string]]
+
+```c
   OI_STR_TYPE SkuImageUrl = "";
   OI_STR_TYPE SkuDescription = "";
   REC_NO ProdRecNo;
@@ -24,4 +26,4 @@ we can use OI screen observe mode
 ![[Pasted image 20240621085511.png]]
 some of Korean encoding value 266 and prompt function delete it. and it caused skipping whole description.
 
-[[How OI display string.canvas|How OI display string]]
+
