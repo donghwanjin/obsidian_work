@@ -175,9 +175,12 @@ grep "RPLM1.*##" *2_apr* | awk -F'/' '{raw="/" $2; print substr(raw,127,2)}' | s
 
 ---
 ## Site: Wow
+
 ### PTL disconnection
 ```
 grep "DDI Q database full" *10_jan*
+```
+
 ## Site: Toll
 
 ### Check cartons sent to GTP 8–15
