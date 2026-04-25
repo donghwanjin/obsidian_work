@@ -42,9 +42,7 @@ quit
 exit
 ```
 
-PTL disconnection
-```
-grep "DDI Q database full" *10_jan*
+
 ```
 
 
