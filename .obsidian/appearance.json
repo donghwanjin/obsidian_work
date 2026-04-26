@@ -1,8 +1,9 @@
 {
   "accentColor": "",
-  "cssTheme": "Obsidianite",
-  "theme": "obsidian",
+  "cssTheme": "AnuPpuccin",
+  "theme": "moonstone",
   "enabledCssSnippets": [
     "color-extend"
-  ]
+  ],
+  "textFontFamily": "NewYork"
 }

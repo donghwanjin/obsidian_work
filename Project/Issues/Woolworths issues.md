@@ -27,7 +27,7 @@ ut_send_tm_away <TmId>
 - something in shipper then DU rebuild.
 
 ## Manual 
-### we need to missing tm 
+### we had to missing tm 
 ![[Pasted image 20240819022841.png]]
 
 ## PO number is not showing on all TM's to track PO it was taken from
