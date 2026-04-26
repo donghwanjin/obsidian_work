@@ -1,3 +1,9 @@
+---
+type: reference
+tags:
+  - tool
+---
+
 ***ctrl + ]***    into the function....
 ***ctrl + t***    get out
 ***#***      Next

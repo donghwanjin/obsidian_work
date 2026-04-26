@@ -1,3 +1,10 @@
+---
+type: issue
+tags:
+  - issue
+project: Woolworths
+---
+
 ### not able to login and error
 ![[Pasted image 20240702125719.png]]
 solution : added line on profile.sh

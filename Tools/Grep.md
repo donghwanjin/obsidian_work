@@ -4,6 +4,8 @@ tags:
   - grep
   - bash
   - linux
+  - tool
+type: reference
 ---
 
 # Grep

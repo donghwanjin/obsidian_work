@@ -1,3 +1,10 @@
+---
+type: project
+tags:
+  - project
+project: Aldi Vic
+---
+
 ### Git
 [https://gitlab.com/dematic/matflo/matflo-c/aldi/aldi-victoria-2306-wcs](https://gitlab.com/dematic/matflo/matflo-c/aldi/aldi-victoria-2306-wcs "https://gitlab.com/dematic/matflo/matflo-c/aldi/aldi-victoria-2306-wcs")
 

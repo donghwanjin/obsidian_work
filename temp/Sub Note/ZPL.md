@@ -1,3 +1,7 @@
+---
+type: note
+---
+
 #### General purpose commands
 
 | **Command** | **Definition**        | **Usage**                                                                            |

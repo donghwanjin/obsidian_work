@@ -1,3 +1,9 @@
+---
+type: reference
+tags:
+  - tool
+---
+
 [[PICK_SetUnsatisfiable.canvas|PICK_SetUnsatisfiable]]
 [[SAD Send process.canvas|SAD Send process]]
 [[New project]]

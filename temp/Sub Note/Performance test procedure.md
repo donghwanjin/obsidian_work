@@ -1,3 +1,7 @@
+---
+type: note
+---
+
 upload snapshot 
 ```bash
 bash ut_db.sh restore dvf_volume_test_v1.tar.xz --force

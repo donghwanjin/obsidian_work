@@ -1,3 +1,9 @@
+---
+type: reference
+tags:
+  - tool
+---
+
 Print Set up
 cntr + R
 ```

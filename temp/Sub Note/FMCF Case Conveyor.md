@@ -1,3 +1,7 @@
+---
+type: note
+---
+
 #fmcf, #wiki, #caseconveyor
 # 1. Overview
 

@@ -1,5 +1,9 @@
 ---
 created: 2025-11-19 18:19
+type: daily
+tags:
+  - daily
+date: 2025-11-19
 ---
 
 tommorow test

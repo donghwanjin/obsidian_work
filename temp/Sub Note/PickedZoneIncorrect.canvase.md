@@ -1,3 +1,7 @@
+---
+type: note
+---
+
 ![[Pasted image 20240919150106.png]]
 instead of DU Area pick change to Pick Task area 
 

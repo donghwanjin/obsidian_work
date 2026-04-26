@@ -1,3 +1,9 @@
+---
+type: reference
+tags:
+  - tool
+---
+
 # virtual server issue
 vim dai-wcs01.sh
 traceroute 10.82.169.93

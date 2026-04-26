@@ -1,3 +1,10 @@
+---
+type: change
+tags:
+  - change
+project: Chilsung
+---
+
 # MS alarm
 We encountered an issue that MS tours were not generating and MCAP task was not started.
 

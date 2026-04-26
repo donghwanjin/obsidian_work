@@ -1,3 +1,9 @@
+---
+type: reference
+tags:
+  - tool
+---
+
 ### Setup vnc password
 
 set the password once by `$> vncpasswd`, and ensure your `$HOME/.vnc/config` has a line like:

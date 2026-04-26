@@ -1,3 +1,7 @@
+---
+type: note
+---
+
 [[How OI display string.canvas|How OI display string]]
 
 ```c

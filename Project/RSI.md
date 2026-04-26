@@ -1,3 +1,10 @@
+---
+type: project
+tags:
+  - project
+project: RSI
+---
+
 ### General
 ##### wifi
 SSID：rsi-xs-dematic  

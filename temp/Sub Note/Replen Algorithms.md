@@ -1,3 +1,7 @@
+---
+type: note
+---
+
 #fmcf, #replen
 
 #### 3.1.4.1. Replenishment Demand Pre-calculation

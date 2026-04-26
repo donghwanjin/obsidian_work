@@ -1,3 +1,9 @@
+---
+type: reference
+tags:
+  - tool
+---
+
 ### uptime
 
 | Current time | system uptime | logged in user | average load over the last 1 min | 5mins | 15mins |

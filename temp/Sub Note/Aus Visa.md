@@ -1,3 +1,7 @@
+---
+type: note
+---
+
 #Australia, #visa
 # Hospital
 ## Knightsbridge Doctors( London ) : 25th June

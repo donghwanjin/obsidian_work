@@ -1,5 +1,9 @@
 ---
 created: 2025-11-12 22:45
+type: daily
+tags:
+  - daily
+date: 2025-11-12
 ---
 #### Test PLC : PC4102
 

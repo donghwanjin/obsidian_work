@@ -1,5 +1,8 @@
 ---
 Project: YoungNam
+type: project
+tags:
+  - project
 ---
 [[Matflo]]
 [[kallithea]]

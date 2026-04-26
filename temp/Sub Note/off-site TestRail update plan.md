@@ -1,3 +1,7 @@
+---
+type: note
+---
+
 #plan
 # TestRail Upload Tool Implementation Plan
 

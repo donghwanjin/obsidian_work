@@ -1,3 +1,7 @@
+---
+type: note
+---
+
 #matflo
 [Setting up a new instance of Matflo for an existing project - Matflo - Global Site](https://wiki.dematic.net/pages/viewpage.action?spaceKey=MATFLO&title=Setting+up+a+new+instance+of+Matflo+for+an+existing+project#SettingupanewinstanceofMatfloforanexistingproject-DevelopmentEnvironmentOptions)
 ```

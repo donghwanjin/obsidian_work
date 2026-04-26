@@ -1,3 +1,7 @@
+---
+type: note
+---
+
 
 STOCK
 - TM 2024032911000471 ( Full pallet 222 cases, 6 layers ) 17:20:57 move request

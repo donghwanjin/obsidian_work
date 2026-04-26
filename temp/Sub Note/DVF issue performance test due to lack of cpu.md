@@ -1,3 +1,7 @@
+---
+type: note
+---
+
 #issue, #dvf, #aldi
 it appears TUDR and TUMI repeat 
 

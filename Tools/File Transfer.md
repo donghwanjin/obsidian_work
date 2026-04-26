@@ -1,3 +1,9 @@
+---
+type: reference
+tags:
+  - tool
+---
+
 ## sftp
  sftp dm2215@IP
 

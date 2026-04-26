@@ -1,3 +1,10 @@
+---
+type: project
+tags:
+  - project
+project: Aldi Vic
+---
+
 ### Git
 [Lillian Ryan Uhl / Matflo Perl Testing · GitLab](https://gitlab.com/A0105372/matflo_perl_testing)
 

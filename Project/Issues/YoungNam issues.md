@@ -1,5 +1,8 @@
 ---
 Project: YoungNam
+type: issue
+tags:
+  - issue
 ---
 1. [x]  #GhostPickIssue ✅ 2024-06-26
 - [[Ghost Pick observation.canvas|observation]] 
