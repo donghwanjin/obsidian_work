@@ -29,7 +29,9 @@ PCDAU35QWGZH.d400.MH.GRP
 
 then my window credential
 
+```bash
 ssh dm2306@192.168.2.20
+```
 
 ### Off site testing
 
@@ -65,8 +67,6 @@ RDB_CONN_STRING=dm2306:MaisieKelly0914~@AldiVic
 
 
 All exception depalletizer
-
-
 
 happy path first then
 
