@@ -5,7 +5,7 @@ type: note
 
 
 ### GTP
-CCGA01DP01 : decision buffer or soter
+CCGA01DP01 : decision buffer or sorter
 
 ### Order buffer 
 No IAT
