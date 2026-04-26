@@ -4,5 +4,6 @@
   "showLineNumber": true,
   "promptDelete": false,
   "attachmentFolderPath": "Attachments",
-  "readableLineLength": false
+  "readableLineLength": false,
+  "propertiesInDocument": "hidden"
 }
