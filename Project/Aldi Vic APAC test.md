@@ -45,8 +45,6 @@ ssh dm2306@192.168.2.20
 ### MIS
 
 RDB_CONN_STRING=dm2306:MaisieKelly0914~@AldiVic
-### Grep
-[[Aldi grep]]
 
 ### Use case
 
@@ -239,31 +237,6 @@ MFC <- CC4201 : /RTURP4201WCS10014OK01NG0186CCCHL2B66R....MSAI66CR02PS11MSAI66CR
 Arrival at the DMS pick station. TUMI can now be sent to the DMS elevator  
 18-Nov-2025 10:51:30.348 mh_dci_comms_MS66 Multi Shuttle PLC 66 Communications MH_DCI_MSG   
 MFC <- MS66 : /RTUDRMS66WCS10415OK01NG0158CCCHL2B66R....MSAI66CR02PS12MSAI66CR02PS1110002617..............TRL907000500010000000000OK000000000000000000000000..............##
-```
-
-two pallet check.
-```
-grep -h -E '4013231251125041027243|4013231251125041053705' ~/logging/master/mh_pc_dci*25_nov*
-
-```
-
-```
-grep -h -E '00000000000000000901|4120000000000000000001' ~/logging/master/mh_pc_dci*25_nov* \
-
-| awk '{
-
-    gsub(/00000000000000000901/, "\033[31m&\033[0m");  # Red
-
-    gsub(/4120000000000000000001/, "\033[32m&\033[0m");  # Green
-
-    print
-
-}'
-```
-
-
-```
-grep -h -E '00000000000000000903|4120000000000000000002' ~/logging/master/mh_pc_dci*3_dec* | awk '{gsub(/00000000000000000903/, "\033[31m&\033[0m"); gsub(/4120000000000000000002/, "\033[32m&\033[0m"); print}'
 ```
 
 

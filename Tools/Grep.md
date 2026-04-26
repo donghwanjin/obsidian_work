@@ -175,13 +175,91 @@ find . -type f -newermt "1day ago 15:30" -exec grep -l "795120000000939728" {} +
 grep "RPLM1.*##" *2_apr* | awk -F'/' '{raw="/" $2; print substr(raw,127,2)}' | sort | uniq -c | sort -nr
 ```
 
+### check highbay balancing
+
+```bash
+grep "TUMI.*MRMR11DP01....MRAI.*##" *23_oct* | perl -nE 'push @a, /MRAI(\d{2})DS01/g; END { say join(",", @a) }'
+```
+
+ 🟢 `-n`
+
+Tells Perl: _“read input line by line and apply the code to each line.”_
+
+ 🟢 `-E`
+
+Enables **modern Perl features**, such as `say` (which automatically adds a newline).
+
+ 🟢 `'push @a, /MRAI(\d{2})DS01/g; ...'`
+
+- `/MRAI(\d{2})DS01/g` is a **regular expression**:
+    
+    - `MRAI` — matches the literal text “MRAI”.
+        
+    - `(\d{2})` — captures two digits (like `08`, `09`, etc.).
+        
+    - `DS01` — matches the literal text “DS01”.
+        
+    - `/g` — global flag (find _all_ matches in the line).
+        
+- `push @a, ...` means:  
+    → Add every matched 2-digit number into array `@a`.
+
+
+```bash
+grep "TUMI.*MRMR11DP01....MRAI.*##" *23_oct* | \
+perl -nE '
+    push @a, /MRAI(\d{2})DS01/g;
+    if (@a >= 9) {
+        say join(",", splice(@a, 0, 9)) . ",";
+    }
+    END {
+        say join(",", @a) . "," if @a;
+    }
+'
+
+```
+
+- `splice(@a, 0, 9)` → takes 9 numbers at a time from the array.
+- 
+    
+- `say join(",", ...) . ","` → prints them with commas and a newline
+### two pallet check.
+```base
+grep -h -E '4013231251125041027243|4013231251125041053705' ~/logging/master/mh_pc_dci*25_nov*
+
+```
+
+```base
+grep -h -E '00000000000000000901|4120000000000000000001' ~/logging/master/mh_pc_dci*25_nov* \
+
+| awk '{
+
+    gsub(/00000000000000000901/, "\033[31m&\033[0m");  # Red
+
+    gsub(/4120000000000000000001/, "\033[32m&\033[0m");  # Green
+
+    print
+
+}'
+```
+
+
+```base
+grep -h -E '00000000000000000903|4120000000000000000002' ~/logging/master/mh_pc_dci*3_dec* | awk '{gsub(/00000000000000000903/, "\033[31m&\033[0m"); gsub(/4120000000000000000002/, "\033[32m&\033[0m"); print}'
+```
+
+
+
+
 ---
 ## Site: Wow
 
 ### PTL disconnection
-```
+```base
 grep "DDI Q database full" *10_jan*
 ```
+
+---
 
 ## Site: Toll
 
