@@ -399,3 +399,144 @@ GLOBAL BOOLEAN MH_DEPAL_REPLEN_REQUEST_RqstRetrievalsToStns(
 }
 
 ```
+
+#### mh_pc_loc_proj_lib.c
+```
+GLOBAL BOOLEAN MH_PC_LOC_CHILSUNG_SetTmLocation(
+  REC_NO TmRecNo,
+  LOCATION_TYPE Location,
+  TM_STATE_TYPE *TmState )
+{
+  BOOLEAN        ResetSelDest = FALSE;
+  BOOLEAN        ResetFinalDest = FALSE;
+
+  if ( !TM_ValidRecNo( TmRecNo ) )
+    return FALSE;
+
+  if ( Location.LocClass != LOC_CLASS_MH_PC )
+    return FALSE;
+
+
+  // TODO: Expand to include selected destination as well
+  LOCATION_TYPE Dest = TM_GetFinalDestination(TmRecNo);
+  LOCATION_TYPE SelDest = TM_GetSelectedDestination(TmRecNo);
+
+  // Set TmState to NO MOVE if TM is at a buffer location
+
+  if (GL_InList(Location.LocRecNo, MH_PC_NO_MOVE_POINTS))
+  {
+    // Don't nullify destination if we haven't reached it yet
+    //
+    // OR
+    //
+    // For Waste Bin buffers, clear it back to NO MOVE as the pallet
+    // could have been moved by the PLC and would cause it to get stuck.
+
+    if( LOC_EQUAL( Location, Dest ) ||
+        LOC_EQUAL( Location, SelDest ) ||
+        LOC_EQUAL( Dest, LOC_NullLocation ) ||
+        ( GL_InList( Location.LocRecNo, MH_PC_WASTE_BUFFER_LOCS ) &&
+          !TM_IsStretchwrapBin( TmRecNo ) ) )
+    {
+      *TmState = TM_STATE_NO_MOVE;
+    }
+  }
+ 
+  /* Code to reroute pallet at PCP3 back to SWAP after failed SWAP check */
+  if (LOC_EQUAL(Location, LOC_P2203PCP3Loc))
+  {
+    /* If pallet has a reject reason, should be routed to SWAP station to be checked */
+
+  }
+
+  // Set TmState to IN STORE if in a destacker location
+
+  if (GL_InList(Location.LocRecNo, MH_PC_DESTACKER_LOCS))
+  {
+    *TmState = TM_STATE_IN_STORE;
+  }
+
+  switch ( Dest.LocClass )
+  {
+    case LOC_CLASS_HIGHBAY:
+    case LOC_CLASS_STORAGE_AREA:
+    case LOC_CLASS_MH_DE:
+    case LOC_CLASS_MH_PC:
+    {
+      if( Location.LocClass == LOC_CLASS_MH_PC )
+      {
+        switch(Location.LocRecNo)
+        {
+          case MH_PC_LOC_P1006HBLS:
+            ResetSelDest = TRUE;
+            break;
+
+          default: break;
+        }
+      }
+    }
+    break;
+
+    case LOC_CLASS_ESS:
+    {
+      if (LOC_EQUAL(Location, LOC_P1214L1MLSLoc))
+      {
+        /* Check if we need to reallocate ESS location */
+        /* Check DU allocation status and reset final destination if incorrect */
+        MH_PC_LOC_CHILSUNG_CompareDuFinalDestWithAllocLoc( TmRecNo,
+                                                           &ResetFinalDest,
+                                                           &ResetSelDest);
+      }
+    }
+    break;
+
+    default: break;
+  }
+
+  if ( ResetSelDest )
+  {
+    MH_PC_LogEvent( EVENT, "%s cleared Sel dest in MH_PC_LOC_CHILSUNG_SetTmLocation",
+                    TM_GetTmId( TmRecNo ) );
+    TM_SetSelectedDestination( TmRecNo, LOC_NullLocation );
+  }
+
+  if ( ResetFinalDest )
+  {
+    MH_PC_LogEvent( EVENT, "%s cleared final dest in MH_PC_LOC_CHILSUNG_SetTmLocation",
+                    TM_GetTmId( TmRecNo ) );
+    TM_SetFinalDestination( TmRecNo, LOC_NullLocation );
+  }
+
+  /* Set Sequencing Loc and time for Depal.
+   */
+  if (LOC_Compare( Location, LOC_P1101L1LS2Loc, 1 ))
+  {
+    TM_SetDepalSequencingLoc( TmRecNo, Location );
+    TM_SetDepalSequencingTime( TmRecNo, TIME_CurrentDaiTime() );
+
+    GL_SetEventFlag( EVENTS, WAKE_MH_DEPAL_MANAGER );
+  }
+
+  if( LOC_IsDepalSourceLoc( Location ) )
+  {
+    LOCATION_TYPE    StnLoc;
+    StnLoc = LOC_GetDepalStnLoc( Location );
+
+    MH_DEPAL_REPLEN_REQUEST_SetupSourceTmTasksForStn( TmRecNo, StnLoc );
+  }
+
+  if( GL_InList( Location.LocRecNo,
+                 MH_PC_LOC_P1101L1LS2,
+                 MH_PC_LOC_P1108LIFT2,
+                 MH_PC_LOC_P1109LIFT1,
+                 MH_PC_LOC_P2013L2WLS2,
+                 END_LIST ) )
+  {
+    GL_SetEventFlag( EVENTS, WAKE_MH_PC_PALLET );
+  }
+
+  return TRUE;
+
+} /* MH_PC_LOC_CHILSUNG_SetTmLocation */
+                               
+```
