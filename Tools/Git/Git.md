@@ -55,6 +55,16 @@ git commit -m "Initial commit"
 ```
 
 ```
+ssh-keygen -t ed25519 -C "donghwan.jin"
+```
+
+```
+cat ~/.ssh/id_ed25519.pub
+```
+
+copy and paste keygen to your gitlab
+
+```
 git config --global user.email "donghwan.jin@dematic.com"
 ```
 
@@ -63,27 +73,10 @@ git config --global user.name "donghwan.jin"
 ```
 
 ```
-git remote add origin https://gitlab.com/donghwan.jin/testrailhelper.git
+git remote set-url origin https://gitlab.com/donghwan.jin/testrailhelper.git
 ```
 
 ```
 git push origin master
 ```
-
-[[unbalance allocation depall task]]
-
-# dfk
-## df
-### dfds
-#### dfd
-##### dfsd
-###### df
-**sdfkdf**
-*asfsdfsd*
-- [ ] dsfadf
-- [ ] dsfsadf
-
-
-
-
 
