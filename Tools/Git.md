@@ -33,3 +33,32 @@ Delete remote branch
 ```
 git push origin --delete uc-gen/CHL-INB-UC320-UC321
 ```
+
+### Create personal project
+
+![[Pasted image 20260427111513.png]]
+
+```
+git init
+```
+
+```
+git add .
+```
+
+```
+git commit -m "Initial commit"
+```
+
+```
+git config --global user.email "donghwan.jin@dematic.com"
+```
+
+```
+git config --global user.name "donghwan.jin"
+```
+
+```
+
+```
+	```
