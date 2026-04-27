@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "🟤",
-      "🟣",
-      "🟢",
       "☝",
-      "🔵"
+      "🔵",
+      "🔴",
+      "⚪",
+      "🤣"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -32,21 +32,17 @@
     "iconIdentifier": ":",
     "debugMode": false
   },
-  "Daily": "📆",
   "Project": "⭕",
   "Project/Toll Hive(2301_P11204).md": "🟡",
-  "Daily/2025/06-June/2025-06-23-Monday.md": "🤣",
   "Project/RSI.md": "⚪",
   "Project/Aldi Vic.md": "🔴",
   "Project/Aldi Vic APAC test.md": "⚪",
-  "Project/Chilsung": "🟢",
-  "Project/Chilsung/Chilsung.md": "🟢",
-  "Project/YongNam": "🟣",
-  "Project/YongNam/YoungNam.md": "🟣",
-  "Project/FMCF": "🔵",
-  "Project/FMCF/FMCF reference Techinical Design.md": "🔵",
-  "Project/Woolworths": "🟤",
-  "Tools/ETC/Jira.md": "☝",
-  "Tools/ETC/kallithea.md": "🚀",
-  "Tools/ETC/SQL.md": "❗"
+  "Tools/Linux/General.md": "🖥",
+  "Tools/Linux/Grep.md": "🧤",
+  "Tools/Linux/File Transfer.md": "📁",
+  "Tools/Linux/VIM.md": "💫",
+  "Tools/Matflo/General.md": "👨‍💻",
+  "Daily": "📆",
+  "Daily/2025/06-June/2025-06-23-Monday.md": "🤣",
+  "Tools/Git/Git.md": "🚀"
 }
