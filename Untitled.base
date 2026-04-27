@@ -1,0 +1,12 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.contains("tool")
+    order:
+      - file.name
+      - tags
+    sort:
+      - property: tags
+        direction: DESC
