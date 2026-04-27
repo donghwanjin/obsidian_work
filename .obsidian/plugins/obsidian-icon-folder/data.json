@@ -34,19 +34,19 @@
   },
   "Daily": "📆",
   "Project": "⭕",
-  "Tools/kallithea.md": "🚀",
-  "Tools/SQL.md": "❗",
   "Project/Toll Hive(2301_P11204).md": "🟡",
   "Daily/2025/06-June/2025-06-23-Monday.md": "🤣",
   "Project/RSI.md": "⚪",
   "Project/Aldi Vic.md": "🔴",
   "Project/Aldi Vic APAC test.md": "⚪",
-  "Tools/Jira.md": "☝",
   "Project/Chilsung": "🟢",
   "Project/Chilsung/Chilsung.md": "🟢",
   "Project/YongNam": "🟣",
   "Project/YongNam/YoungNam.md": "🟣",
   "Project/FMCF": "🔵",
   "Project/FMCF/FMCF reference Techinical Design.md": "🔵",
-  "Project/Woolworths": "🟤"
+  "Project/Woolworths": "🟤",
+  "Tools/ETC/Jira.md": "☝",
+  "Tools/ETC/kallithea.md": "🚀",
+  "Tools/ETC/SQL.md": "❗"
 }
