@@ -1,9 +1,8 @@
 ---
 Project: Chilsung
-type: project
+type: General
 tags:
   - project
 ---
 [[Chilsung Change|change]]
-
-[[unbalance allocation depall task|Issue]]
+[[Chilsung issue|Issue]]
