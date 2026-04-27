@@ -6,6 +6,10 @@ tags:
 
 #Git 
 
+### PAT
+```
+🔐β 6cWKn8ChIKoH+ZYmaYdGJBsuoWGtPOBYPnk0YieeOdx5N/Rk/LtqsrG3z1tcv9OKh2uBWCnGuGwnMfdXCpv0LYbDz6t2I+/pxCDaGrxD6HlTwU4w6kWicy/XhpsQFZFRPAG3w3fuXSPEnHBRVNI= 🔐
+```
 ### test
 ```
 git branch
