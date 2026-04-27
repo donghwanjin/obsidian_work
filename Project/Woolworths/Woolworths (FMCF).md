@@ -5,9 +5,6 @@ tags:
 project: Woolworths
 ---
 
-# SSH login
-1Password
-
 ### New jira
 [[P1948WCS-6695] New JIRA Template - Dematic Global JIRA](https://jira.dematic.net/browse/P1948WCS-6695)
 
@@ -131,9 +128,3 @@ ut_update_move_priority_tm_final_dest_depall_area_provided_prod_x_and_time_to_su
 ut_update_move_priority_tm_final_dest_depall_area_provided_prod_x_and_time_to_subtract_y 166702 8
 
 
-
-
-
-OP_RSVN_SetPickBucketRecNo
-
-SetPickStateFromBuckets
