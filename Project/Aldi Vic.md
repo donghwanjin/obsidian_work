@@ -9,6 +9,7 @@ project: Aldi Vic
 [https://gitlab.com/dematic/matflo/matflo-c/aldi/aldi-victoria-2306-wcs](https://gitlab.com/dematic/matflo/matflo-c/aldi/aldi-victoria-2306-wcs "https://gitlab.com/dematic/matflo/matflo-c/aldi/aldi-victoria-2306-wcs")
 
 ### Wiki
+[[2306_TechnicalDesign]]
 [[FMCF]]
 ### Jira
 
