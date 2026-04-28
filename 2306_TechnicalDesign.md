@@ -5,3 +5,5 @@
 [[2306_Dewrapping]]
 [[2306_DMS]]
 [[2306_DP_Pull_Pallet_Manager]]
+[[2306_Flex_Sorter]]
+[[2306_Highbay]]
