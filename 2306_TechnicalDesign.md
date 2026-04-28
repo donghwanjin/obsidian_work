@@ -7,3 +7,6 @@
 [[2306_DP_Pull_Pallet_Manager]]
 [[2306_Flex_Sorter]]
 [[2306_Highbay]]
+[[2306_Highbay_Optimiser]]
+[[2306_Host_Interface]]
+[[2306_Label_Print_and_Apply]]
